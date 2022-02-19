@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="image/logo.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+        <title>investment company</title>
+    </head>
+<body>
+<div class="header">
+    <nav id="navbar">
+        <img  class="logo" src="image/logo.png" alt="eror">
+        <ul id="menu">
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#">introduction</a></li>
+            <li><a href="#">Post & blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <img src="image/moon.png" id="moon">
+            <li><a href="index.html">MN</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+</div>
+<script>
+    var moon = document.getElementById("moon");
+    moon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            moon.src = "image/sun.png";
+        }else{
+            moon.src = "image/moon.png";
+        }
+    }
+</script>
+<div class="barner">
+<p class="text">What is an investment?</p>
+<iframe  class="video" src="https://www.youtube-nocookie.com/embed/wcN_lctOIGw?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
